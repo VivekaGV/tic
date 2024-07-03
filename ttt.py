@@ -62,10 +62,10 @@ def play(n):
         print("winner is B")
 
     
-B1=Button(window,textvariable=one,bg="#303F9F",
+Button(window,textvariable=one,bg="#303F9F",
            fg="#FFFFFF",font=("Arial",24,"bold"),
            width=10,height=3,
-           command=lambda: play(1))
+           command=lambda: play(1)).place(x=0,y=0)
 Button(window,textvariable=two,bg="#303F9F",
            fg="#FFFFFF",font=("Arial",24,"bold"),
            width=10,height=3,
@@ -98,6 +98,6 @@ Button(window,textvariable=9,bg="#303F9F",
            fg="#FFFFFF",font=("Arial",24,"bold"),
            width=10,height=3,
            command=lambda: play(9)).place(x=400,y=280)
-B1.grid(row=0,column=0)
+
 window.mainloop()
 
